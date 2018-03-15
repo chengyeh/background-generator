@@ -26,13 +26,13 @@ function randomiseGradient() {
 	setGradient();
 }
 
-function randomiseRGB() {
+const randomiseRGB = () => {
 	var r = Math.floor(Math.random() * 256);
 	var g = Math.floor(Math.random() * 256);
 	var b = Math.floor(Math.random() * 256);
 
 	return "rgb(" + r + ", " + g + ", " + b + ")";
-}
+};
 
 const randomiseHex = () => {
 	const letters = '0123456789ABCDEF';
@@ -41,7 +41,7 @@ const randomiseHex = () => {
 		color += letters[Math.floor(Math.random() * 16)];
 	}
 	return color;
-}
+};
 
 color1.addEventListener("input", setGradient);
 
