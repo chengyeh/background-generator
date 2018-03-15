@@ -35,11 +35,20 @@ function randomiseRGB() {
 }
 
 //Reference: https://stackoverflow.com/questions/1484506/random-color-generator
-function randomiseHex() {
-	var letters = '0123456789ABCDEF';
-	var color = '#';
-	for (var i = 0; i < 6; i++) {
-		color += letters[Math.floor(Math.random() * 16)];
+// function randomiseHex() {
+// 	var letters = '0123456789ABCDEF';
+// 	var color = '#';
+// 	for (var i = 0; i < 6; i++) {
+// 		color += letters[Math.floor(Math.random() * 16)];
+// 	}
+// 	return color;
+// }
+
+const randomiseHex = () => {
+	const letters = '0123456789ABCDEF';
+	const color = '#';
+	for (let i = 0; i < 6; i++) {
+		olor += letters[Math.floor(Math.random() * 16)];
 	}
 	return color;
 }
